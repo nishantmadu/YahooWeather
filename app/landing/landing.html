@@ -1,0 +1,48 @@
+<div class="container" ng-controller="landingCtrl">
+  <div class="row">
+
+
+    <div class="col-md-6 col-md-offset-3">
+      <h1>Yahoo Weather Forecast</h1>
+    </div>
+    <div class="col-md-6 col-md-offset-3">
+      <input ng-model="state" type="text" class="form-control" id="" placeholder="Enter your State">
+      </br>
+      <input ng-model="city" type="text" class="form-control" id="" placeholder="Enter your City">
+
+    </div>
+
+
+  </div>
+  </br>
+  <div class="row">
+    <div class="col-md-3 col-md-offset-5">
+      <button ng-click="data()" class="btn btn-success" type="button" name="button">Submit</button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12 col-md-offset-3">
+      <h2>{{weatherData.description}}</h2>
+    </div>
+    <div class="col-md-12 col-md-offset-6">
+
+      <h4>{{weatherData.astronomy.sunrise}}</h4>
+    </div>
+    <div class="col-md-12 col-md-offset-6">
+      <h4>{{weatherData.astronomy.sunset}}</h4>
+    </div>
+    <div class="col-md-12 col-md-offset-6">
+      <h4>{{weatherData.atmosphere.humidity}}</h4>
+    </div>
+    <div class="col-md-12 col-md-offset-6">
+      <h4>{{weatherData.atmosphere.pressure}}</h4>
+    </div>
+    <div class="col-md-12 col-md-offset-6">
+      <h4>{{weatherData.atmosphere.rising}}</h4>
+    </div>
+    <div class="col-md-12 col-md-offset-6">
+      <h4>{{weatherData.atmosphere.visibility}}</h4>
+    </div>
+  </div>
+
+</div>
